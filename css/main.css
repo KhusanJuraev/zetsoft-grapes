@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0a0e15;
+  box-shadow: inset 0 5px 6px rgba(0, 0, 0, 0.95);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #12172f;
+  outline: 1px solid #000000;
+}
+
+header {
+  position: relative;
+}
+header .header-container {
+  background: #191e2b;
+  box-shadow: 0 2px 5px #000;
+  padding: 0.5em 1em 0.2em;
+}
+header .header-row-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-row-top .brand {
+  font-size: 19px;
+  cursor: pointer;
+}
+header .header-row-top .header-row-top-right {
+  display: flex;
+}
+header .header-row-top .project-name input {
+  padding: 3px 0;
+  color: silver;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  text-align: center;
+  outline: none;
+}
+header .header-row-top .project-name input:focus {
+  border: 1px solid silver;
+}
+header .header-row-top .header-row-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-row-top .header-row-top-right div {
+  margin: 0 8px;
+}
+header .header-row-top .header-row-top-right button {
+  border-radius: 2px;
+  font-weight: 500;
+  padding: 3px 18px;
+  color: #fff;
+}
+header .header-row-top .header-row-top-right .share-button button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+header .header-row-top .header-row-top-right .dropdown-toggle {
+  border-left: 1px solid rgba(192, 192, 192, 0.5);
+}
+header .header-row-top .header-row-top-right .btn-outline-light {
+  border: none;
+  background: transparent;
+}
+header .header-row-top .header-row-top-right .btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+header .header-row-top .header-row-top-right a {
+  font-size: 17px;
+  margin-left: 10px;
+  opacity: 0.7;
+}
+header .header-row-top .header-row-top-right a:hover {
+  opacity: 1;
+}
+header .header-row-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 0 1px;
+}
+header .header-row-bottom .header-row-bottom-left {
+  display: flex;
+}
+header .header-row-bottom .header-row-bottom-left .premium {
+  background: rgba(255, 255, 255, 0.25);
+}
+header .header-row-bottom .header-row-bottom-left .premium:hover {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #d6a336 30%, #caa145 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #b08d3d 0%, #bf9200 8%, #d19e0b 25%, #ffcb55 62.5%, #5d4a1f 100%);
+}
+header .header-row-bottom .header-row-bottom-left .premium i {
+  transition: 0.2s ease-out;
+}
+header .header-row-bottom .header-row-bottom-left .premium:hover span {
+  color: #000;
+  transition: 0.3s ease;
+}
+header .header-row-bottom .header-row-bottom-left .premium:hover i {
+  color: #000;
+  transition: 0.3s ease;
+  transform: rotate(90deg) translateY(-2px) scale(1.2);
+}
+header .header-row-bottom .button-controller {
+  margin-right: 10px;
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+}
+header .header-row-bottom .button-controller:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+header .header-row-bottom .button-controller span {
+  margin-left: 5px;
+}
+header .header-row-bottom .button-controller i {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-row-bottom .header-row-bottom-right {
+  display: flex;
+}
+
+.editor-container {
+  width: 100%;
+  height: 100vh;
+  background: #1b1e21;
+  padding-top: 6em;
+  position: relative;
+}
+.editor-container .left-bar-items {
+  position: fixed;
+  top: 90px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.editor-container .left-bar-items .left-bar-item {
+  box-shadow: 0 2px 5px #000;
+  list-style: none;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #191e2b;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  margin: 5px 0;
+  opacity: 0.8;
+}
+.editor-container .left-bar-items .left-bar-item i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.editor-container .left-bar-items .left-bar-item .text {
+  font-size: 17px;
+  margin-left: 5px;
+  display: none;
+  padding-right: 2px;
+}
+.editor-container .left-bar-items .left-bar-item:hover {
+  border-radius: 5px;
+  opacity: 1;
+}
+.editor-container .left-bar-items .left-bar-item:hover .text {
+  display: block;
+}
+.editor-container .toolbar-container {
+  position: fixed;
+  box-shadow: 0 2px 5px #000;
+  top: 100px;
+  right: 15px;
+  background: #191e2b;
+  padding: 5px 0;
+  border-radius: 3px;
+  color: #fff;
+}
+.editor-container .toolbar-container .toolbar-header {
+  display: flex;
+  color: #fff;
+  font-size: 11px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.21);
+}
+.editor-container .toolbar-container .toolbar-header i:active {
+  color: #ff4c60;
+}
+.editor-container .toolbar-container .control-icons {
+  margin: 0 8px;
+  cursor: pointer;
+}
+.editor-container .toolbar-container .drag-zone {
+  cursor: all-scroll;
+}
+.editor-container .toolbar-container .inner-button {
+  display: flex;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.21);
+  padding: 4px 0;
+}
+.editor-container .toolbar-container .toolbar-btn {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 8px;
+  transition: 0.2s ease-out;
+  position: relative;
+}
+.editor-container .toolbar-container .toolbar-btn:hover {
+  background: rgba(0, 18, 43, 0.82);
+}
+.editor-container .toolbar-container .toolbar-btn:active i {
+  color: #ff4c60;
+}
+.editor-container .toolbar-container .toolbar-btn input {
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  outline: none;
+}
+.editor-container .toolbar-container .toolbar-btn input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  outline: none;
+}
+.editor-container .toolbar-container .toolbar-size, .editor-container .toolbar-container .toolbar-position, .editor-container .toolbar-container .layer {
+  text-align: center;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.21);
+  padding: 8px 0;
+}
+.editor-container .toolbar-container input {
+  background: transparent;
+  border: none;
+  width: 36px;
+  text-align: center;
+}
+.editor-container .toolbar-container input:hover {
+  background: rgba(0, 18, 43, 0.82);
+}
+.editor-container .toolbar-container input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  outline: none;
+}
+.editor-container .toolbar-container .layer span {
+  background: rgba(0, 18, 43, 0.32);
+  padding: 2px;
+  margin: 0 9px;
+  border-radius: 5px;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+.editor-container .toolbar-container .layer span:hover {
+  background: rgba(0, 18, 43, 0.82);
+}
+
+/*# sourceMappingURL=main.css.map */
